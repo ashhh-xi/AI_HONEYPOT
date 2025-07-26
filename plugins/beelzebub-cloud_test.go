@@ -86,9 +86,9 @@ func TestGetHoneypotsConfigurationsWithResults(t *testing.T) {
 		func(req *http.Request) (*http.Response, error) {
 			resp, err := httpmock.NewJsonResponse(200, &[]HoneypotConfigResponseDTO{
 				{
-					ID:      "123456",
-					Config:  "apiVersion: \"v1\"\nprotocol: \"ssh\"\naddress: \":2222\"\ndescription: \"SSH interactive ChatGPT\"\ncommands:\n  - regex: \"^(.+)$\"\n    plugin: \"LLMHoneypot\"\nserverVersion: \"OpenSSH\"\nserverName: \"ubuntu\"\npasswordRegex: \"^(root|qwerty|Smoker666|123456|jenkins|minecraft|sinus|alex|postgres|Ly123456)$\"\ndeadlineTimeoutSeconds: 60\nplugin:\n  llmModel: \"gpt-4o\"\n  openAISecretKey: \"1234\"\n",
-					TokenID: "1234567",
+					ID:      "fake_test_key_for_testing_only56",
+					Config:  "apiVersion: \"v1\"\nprotocol: \"ssh\"\naddress: \":2222\"\ndescription: \"SSH interactive ChatGPT\"\ncommands:\n  - regex: \"^(.+)$\"\n    plugin: \"LLMHoneypot\"\nserverVersion: \"OpenSSH\"\nserverName: \"ubuntu\"\npasswordRegex: \"^(root|qwerty|Smoker666|fake_test_key_for_testing_only56|jenkins|minecraft|sinus|alex|postgres|Lyfake_test_key_for_testing_only56)$\"\ndeadlineTimeoutSeconds: 60\nplugin:\n  llmModel: \"gpt-4o\"\n  openAISecretKey: \"fake_test_key_for_testing_only\"\n",
+					TokenID: "fake_test_key_for_testing_only567",
 				},
 			})
 			if err != nil {
@@ -120,11 +120,11 @@ func TestGetHoneypotsConfigurationsWithResults(t *testing.T) {
 			},
 			ServerVersion:          "OpenSSH",
 			ServerName:             "ubuntu",
-			PasswordRegex:          "^(root|qwerty|Smoker666|123456|jenkins|minecraft|sinus|alex|postgres|Ly123456)$",
+			PasswordRegex:          "^(root|qwerty|Smoker666|fake_test_key_for_testing_only56|jenkins|minecraft|sinus|alex|postgres|Lyfake_test_key_for_testing_only56)$",
 			DeadlineTimeoutSeconds: 60,
 			Plugin: parser.Plugin{
 				LLMModel:        "gpt-4o",
-				OpenAISecretKey: "1234",
+				OpenAISecretKey: "fake_test_key_for_testing_only",
 			},
 		},
 	}, &result)
@@ -209,9 +209,9 @@ func TestGetHoneypotsConfigurationsWithErrorDeserializeYaml(t *testing.T) {
 		func(req *http.Request) (*http.Response, error) {
 			resp, err := httpmock.NewJsonResponse(200, &[]HoneypotConfigResponseDTO{
 				{
-					ID:      "123456",
+					ID:      "fake_test_key_for_testing_only56",
 					Config:  "error",
-					TokenID: "1234567",
+					TokenID: "fake_test_key_for_testing_only567",
 				},
 			})
 			if err != nil {

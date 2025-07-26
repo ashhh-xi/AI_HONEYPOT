@@ -24,4 +24,4 @@ commands:
 plugin:
   llmProvider: "openai"
   llmModel: "gpt-4o"
-  openAISecretKey: "sk-proj-123456"
+  openAISecretKey: "fake_test_key_for_testing_only"

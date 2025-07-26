@@ -12,4 +12,4 @@ deadlineTimeoutSeconds: 6000
 plugin:
   llmProvider: "openai"
   llmModel: "gpt-4o"
-  openAISecretKey: "sk-proj-12345"
+  openAISecretKey: "fake_test_key_for_testing_only"
