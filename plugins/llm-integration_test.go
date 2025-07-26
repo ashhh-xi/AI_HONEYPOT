@@ -108,11 +108,11 @@ func TestBuildExecuteModelOpenAISecretKeyFromEnv(t *testing.T) {
 		Provider:  OpenAI,
 	}
 
-	os.Setenv("OPEN_AI_SECRET_KEY", "fake_test_key_for_testing_only")
+	os.Setenv("OPEN_AI_SECRET_KEY", "sdjdnklfjndslkjanfk")
 
 	openAIGPTVirtualTerminal := InitLLMHoneypot(llmHoneypot)
 
-	assert.Equal(t, "fake_test_key_for_testing_only", openAIGPTVirtualTerminal.OpenAIKey)
+	assert.Equal(t, "sdjdnklfjndslkjanfk", openAIGPTVirtualTerminal.OpenAIKey)
 
 }
 
@@ -144,7 +144,7 @@ func TestBuildExecuteModelWithCustomPrompt(t *testing.T) {
 
 	llmHoneypot := LLMHoneypot{
 		Histories:    make([]Message, 0),
-		OpenAIKey:    "fake_test_key_for_testing_only",
+		OpenAIKey:    "sdjdnklfjndslkjanfk",
 		Protocol:     tracer.HTTP,
 		Model:        "gpt-4o",
 		Provider:     OpenAI,
@@ -224,7 +224,7 @@ func TestBuildExecuteModelSSHWithResultsOpenAI(t *testing.T) {
 
 	llmHoneypot := LLMHoneypot{
 		Histories: make([]Message, 0),
-		OpenAIKey: "fake_test_key_for_testing_only",
+		OpenAIKey: "sdjdnklfjndslkjanfk",
 		Protocol:  tracer.SSH,
 		Model:     "gpt-4o",
 		Provider:  OpenAI,
@@ -300,7 +300,7 @@ func TestBuildExecuteModelSSHWithoutResults(t *testing.T) {
 
 	llmHoneypot := LLMHoneypot{
 		Histories: make([]Message, 0),
-		OpenAIKey: "fake_test_key_for_testing_only",
+		OpenAIKey: "sdjdnklfjndslkjanfk",
 		Protocol:  tracer.SSH,
 		Model:     "gpt-4o",
 		Provider:  OpenAI,
@@ -343,7 +343,7 @@ func TestBuildExecuteModelHTTPWithResults(t *testing.T) {
 
 	llmHoneypot := LLMHoneypot{
 		Histories: make([]Message, 0),
-		OpenAIKey: "fake_test_key_for_testing_only",
+		OpenAIKey: "sdjdnklfjndslkjanfk",
 		Protocol:  tracer.HTTP,
 		Model:     "gpt-4o",
 		Provider:  OpenAI,
@@ -380,7 +380,7 @@ func TestBuildExecuteModelHTTPWithoutResults(t *testing.T) {
 
 	llmHoneypot := LLMHoneypot{
 		Histories: make([]Message, 0),
-		OpenAIKey: "fake_test_key_for_testing_only",
+		OpenAIKey: "sdjdnklfjndslkjanfk",
 		Protocol:  tracer.HTTP,
 		Model:     "gpt-4o",
 		Provider:  OpenAI,

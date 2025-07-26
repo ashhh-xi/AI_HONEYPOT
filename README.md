@@ -74,7 +74,7 @@ Create a `.env` file in the `honeypot_clean` directory with the following conten
 RABBITMQ_URI=amqp://guest:guest@rabbitmq:5672/
 
 # OpenAI Configuration (optional - for LLM integration)
-OPEN_AI_SECRET_KEY=your_openai_key_here_optional
+OPEN_AI_SECRET_KEY=your_openai_key_here
 ```
 
 **Note:** The `OPEN_AI_SECRET_KEY` is optional. If not provided, LLM features will be disabled.
@@ -457,12 +457,7 @@ Test-NetConnection -ComputerName localhost -Port 3306
 Test-NetConnection -ComputerName localhost -Port 3307
 You should see TcpTestSucceeded : True.
 
-D. Prometheus
-Open http://localhost:2112/metrics in your browser.
-E. RabbitMQ
-Go to http://localhost:15672
-Login: guest / guest
-Check the event queue after making SSH/HTTP attempts.
+
 
 
 ## 📊 Monitoring and Logs
