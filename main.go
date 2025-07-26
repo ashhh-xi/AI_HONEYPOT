@@ -2,13 +2,12 @@ package main
 
 import (
 	"flag"
-	"log"
 	"runtime/debug"
 
 	"github.com/sudarshantk/honeypot/builder"
 	"github.com/sudarshantk/honeypot/parser"
 
-	log "github.com/sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -55,6 +54,6 @@ func main() {
 
 func failOnError(err error, msg string) {
 	if err != nil {
-		log.Fatalf("%s: %s", msg, err)
+		logrus.Fatalf("%s: %s", msg, err)
 	}
 }

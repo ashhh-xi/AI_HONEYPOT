@@ -6,12 +6,12 @@ core:
     logsPath: ./logs
   tracings:
     rabbit-mq:
-      enabled: true
-      uri: "amqp://guest:guest@rabbitmq:5672/"
+      enabled: false
+      uri: ""
   prometheus:
-    path: /metrics
+    path: "/metrics"
     port: ":2112"
   beelzebub-cloud:
     enabled: false
     uri: ""
-    auth-token: "" 
+    auth-token: ""

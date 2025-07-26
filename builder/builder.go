@@ -90,14 +90,6 @@ func (b *Builder) Close() error {
 }
 
 func (b *Builder) Run() error {
-	fmt.Println(
-		`
-██████  ███████ ███████ ██      ███████ ███████ ██████  ██    ██ ██████  
-██   ██ ██      ██      ██         ███  ██      ██   ██ ██    ██ ██   ██ 
-██████  █████   █████   ██        ███   █████   ██████  ██    ██ ██████  
-██   ██ ██      ██      ██       ███    ██      ██   ██ ██    ██ ██   ██ 
-██████  ███████ ███████ ███████ ███████ ███████ ██████   ██████  ██████  
-Honeypot Framework, happy hacking!`)
 	// Init Prometheus openmetrics
 	go func() {
 		if (b.beelzebubCoreConfigurations.Core.Prometheus != parser.Prometheus{}) {
