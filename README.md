@@ -74,7 +74,7 @@ Create a `.env` file in the `honeypot_clean` directory with the following conten
 RABBITMQ_URI=amqp://guest:guest@rabbitmq:5672/
 
 # OpenAI Configuration (optional - for LLM integration)
-OPEN_AI_SECRET_KEY=your_openai_key_here
+OPEN_AI_SECRET_KEY=your_openai_key_here_optional
 ```
 
 **Note:** The `OPEN_AI_SECRET_KEY` is optional. If not provided, LLM features will be disabled.

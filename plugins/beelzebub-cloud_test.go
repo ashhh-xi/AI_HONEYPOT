@@ -39,7 +39,7 @@ func TestBuildSendEventWithResults(t *testing.T) {
 		},
 	)
 
-	beelzebubCloud := InitBeelzebubCloud(uri, "sdjdnklfjndslkjanfk")
+	beelzebubCloud := InitBeelzebubCloud(uri, "fake_test_key_for_testing_only")
 	beelzebubCloud.client = client
 
 	//When
@@ -64,7 +64,7 @@ func TestBuildSendEventErro(t *testing.T) {
 		},
 	)
 
-	beelzebubCloud := InitBeelzebubCloud(uri, "sdjdnklfjndslkjanfk")
+	beelzebubCloud := InitBeelzebubCloud(uri, "fake_test_key_for_testing_only")
 	beelzebubCloud.client = client
 
 	//When
@@ -98,7 +98,7 @@ func TestGetHoneypotsConfigurationsWithResults(t *testing.T) {
 		},
 	)
 
-	beelzebubCloud := InitBeelzebubCloud(uri, "sdjdnklfjndslkjanfk")
+	beelzebubCloud := InitBeelzebubCloud(uri, "fake_test_key_for_testing_only")
 	beelzebubCloud.client = client
 
 	//When
@@ -157,7 +157,7 @@ func TestGetHoneypotsConfigurationsWithErrorAPI(t *testing.T) {
 		},
 	)
 
-	beelzebubCloud := InitBeelzebubCloud(uri, "sdjdnklfjndslkjanfk")
+	beelzebubCloud := InitBeelzebubCloud(uri, "fake_test_key_for_testing_only")
 	beelzebubCloud.client = client
 
 	//When
@@ -186,7 +186,7 @@ func TestGetHoneypotsConfigurationsWithErrorUnmarshal(t *testing.T) {
 		},
 	)
 
-	beelzebubCloud := InitBeelzebubCloud(uri, "sdjdnklfjndslkjanfk")
+	beelzebubCloud := InitBeelzebubCloud(uri, "fake_test_key_for_testing_only")
 	beelzebubCloud.client = client
 
 	//When
@@ -221,7 +221,7 @@ func TestGetHoneypotsConfigurationsWithErrorDeserializeYaml(t *testing.T) {
 		},
 	)
 
-	beelzebubCloud := InitBeelzebubCloud(uri, "sdjdnklfjndslkjanfk")
+	beelzebubCloud := InitBeelzebubCloud(uri, "fake_test_key_for_testing_only")
 	beelzebubCloud.client = client
 
 	//When
