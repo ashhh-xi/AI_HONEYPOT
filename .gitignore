@@ -4,3 +4,26 @@ logs
 .vscode
 .history
 coverage*.out
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Configuration files with secrets
+configurations/*.env
+configurations/*.key
+configurations/*.pem
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
